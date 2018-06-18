@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import {Employee} from '../employee';
 
@@ -7,9 +7,14 @@ import {Employee} from '../employee';
   templateUrl: './employee.component.html',
   styleUrls: ['./employee.component.css']
 })
-export class EmployeeComponent {
+export class EmployeeComponent implements OnInit {
   @Input() employee: Employee;
-
+  @Input() numberOfReports: number;
+  //where do I get the actual number of direct reports?
   constructor() {
+  }
+
+  ngOnInit(){
+    
   }
 }
