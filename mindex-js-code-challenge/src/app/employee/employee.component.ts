@@ -9,12 +9,12 @@ import {Employee} from '../employee';
 })
 export class EmployeeComponent implements OnInit {
   @Input() employee: Employee;
-  @Input() numberOfReports: number;
+  @Input() allReports: number;
   //where do I get the actual number of direct reports?
   constructor() {
   }
 
   ngOnInit(){
-    
+
   }
 }
